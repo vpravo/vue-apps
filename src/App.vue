@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    {{ massage }}
+    <router-view />
   </div>
 </template>
 <script>
