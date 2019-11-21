@@ -16,7 +16,7 @@
 <script>
 import index from "./contents"
 export default {
-  name: "Contents",
+  name: "AppContents",
   data() {
     return {
       contents: index
@@ -25,4 +25,7 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style lang="sass" scoped>
+li
+    cursor: pointer
+</style>
