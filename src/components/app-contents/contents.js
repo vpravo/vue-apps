@@ -38,5 +38,9 @@ export default [
   {
     name: "Работа со списками",
     path: "handle-lists"
+  },
+  {
+    name: "Оптимизация свойства computed",
+    path: "optimization-computed"
   }
 ]

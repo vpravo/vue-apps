@@ -11,6 +11,7 @@ import HandleCssClass from "../components/handle-css-class"
 import HandleInlineStyle from "../components/handle-inline-style"
 import HandleVisible from "../components/handle-visible"
 import HandleLists from "../components/handle-lists"
+import OptimazationComputed from "../components/optimazation-computed"
 
 Vue.use(VueRouter)
 
@@ -68,6 +69,11 @@ const routes = [
     path: "/handle-lists",
     name: "handle-lists",
     component: HandleLists
+  },
+  {
+    path: "/optimization-computed",
+    name: "optimization-computed",
+    component: OptimazationComputed
   }
 ]
 
