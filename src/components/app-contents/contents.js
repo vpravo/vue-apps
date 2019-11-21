@@ -42,5 +42,9 @@ export default [
   {
     name: "Оптимизация свойства computed",
     path: "optimization-computed"
+  },
+  {
+    name: "Отслеживание изменений с watch",
+    path: "watch-for-changes"
   }
 ]

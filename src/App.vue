@@ -4,12 +4,6 @@
   </div>
 </template>
 <script>
-export default {
-  data: function() {
-    return {
-      massage: "Привет Vue!"
-    }
-  }
-}
+export default {}
 </script>
 <style lang="sass"></style>

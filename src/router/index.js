@@ -12,6 +12,7 @@ import HandleInlineStyle from "../components/handle-inline-style"
 import HandleVisible from "../components/handle-visible"
 import HandleLists from "../components/handle-lists"
 import OptimazationComputed from "../components/optimazation-computed"
+import WatchForChanges from "../components/watch-for-changes"
 
 Vue.use(VueRouter)
 
@@ -74,6 +75,11 @@ const routes = [
     path: "/optimization-computed",
     name: "optimization-computed",
     component: OptimazationComputed
+  },
+  {
+    path: "/watch-for-changes",
+    name: "watch-for-changes",
+    component: WatchForChanges
   }
 ]
 
