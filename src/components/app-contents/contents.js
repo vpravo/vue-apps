@@ -18,5 +18,21 @@ export default [
   {
     name: "Модификаторы событий",
     path: "event-modifier"
+  },
+  {
+    name: "Модель для работы с формами",
+    path: "model-input"
+  },
+  {
+    name: "Работа с css классами",
+    path: "handle-css-class"
+  },
+  {
+    name: "Работа с inline стилями",
+    path: "handle-inline-style"
+  },
+  {
+    name: "Управление отображением элементов",
+    path: "handle-visible"
   }
 ]

@@ -6,6 +6,10 @@ import PresentationHtml from "../components/presentation-html"
 import HandleEvents from "../components/handle-events"
 import PassParameter from "../components/pass-parameter"
 import EventModifier from "../components/event-modifier"
+import ModelInput from "../components/model-input"
+import HandleCssClass from "../components/handle-css-class"
+import HandleInlineStyle from "../components/handle-inline-style"
+import HandleVisible from "../components/handle-visible"
 
 Vue.use(VueRouter)
 
@@ -38,6 +42,26 @@ const routes = [
     path: "/event-modifier",
     name: "event-modifier",
     component: EventModifier
+  },
+  {
+    path: "/model-input",
+    name: "model-input",
+    component: ModelInput
+  },
+  {
+    path: "/handle-css-class",
+    name: "handle-css-class",
+    component: HandleCssClass
+  },
+  {
+    path: "/handle-inline-style",
+    name: "handle-inline-style",
+    component: HandleInlineStyle
+  },
+  {
+    path: "/handle-visible",
+    name: "handle-visible",
+    component: HandleVisible
   }
 ]
 
