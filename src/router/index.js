@@ -10,6 +10,7 @@ import ModelInput from "../components/model-input"
 import HandleCssClass from "../components/handle-css-class"
 import HandleInlineStyle from "../components/handle-inline-style"
 import HandleVisible from "../components/handle-visible"
+import HandleLists from "../components/handle-lists"
 
 Vue.use(VueRouter)
 
@@ -62,6 +63,11 @@ const routes = [
     path: "/handle-visible",
     name: "handle-visible",
     component: HandleVisible
+  },
+  {
+    path: "/handle-lists",
+    name: "handle-lists",
+    component: HandleLists
   }
 ]
 

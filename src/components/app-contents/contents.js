@@ -34,5 +34,9 @@ export default [
   {
     name: "Управление отображением элементов",
     path: "handle-visible"
+  },
+  {
+    name: "Работа со списками",
+    path: "handle-lists"
   }
 ]

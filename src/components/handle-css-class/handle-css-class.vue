@@ -58,16 +58,16 @@ export default {
 
 <style scoped lang="sass">
 .circle
-    width: 100px
-    height: 100px
-    border-radius: 50%
-    border: 1px solid black
-    display: inline-block
-    margin: 40px
+  width: 100px
+  height: 100px
+  border-radius: 50%
+  border: 1px solid black
+  display: inline-block
+  margin: 40px
 .red
-    background: red
+  background: red
 .blue
-        background: blue
+  background: blue
 .green
-        background: green
+  background: green
 </style>
