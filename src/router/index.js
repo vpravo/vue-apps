@@ -13,6 +13,8 @@ import HandleVisible from "../components/handle-visible"
 import HandleLists from "../components/handle-lists"
 import OptimazationComputed from "../components/optimazation-computed"
 import WatchForChanges from "../components/watch-for-changes"
+import DomElement from "../components/dom-element"
+import LifecycleComponent from "../components/lifecycle-component"
 
 Vue.use(VueRouter)
 
@@ -80,6 +82,16 @@ const routes = [
     path: "/watch-for-changes",
     name: "watch-for-changes",
     component: WatchForChanges
+  },
+  {
+    path: "/dom-element",
+    name: "dom-element",
+    component: DomElement
+  },
+  {
+    path: "/lifecycle-component",
+    name: "lifecycle-component",
+    component: LifecycleComponent
   }
 ]
 

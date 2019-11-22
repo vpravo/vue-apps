@@ -46,5 +46,9 @@ export default [
   {
     name: "Отслеживание изменений с watch",
     path: "watch-for-changes"
+  },
+  {
+    name: "Доступ к Dom элементам",
+    path: "dom-element"
   }
 ]
