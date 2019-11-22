@@ -15,6 +15,7 @@ import OptimazationComputed from "../components/optimazation-computed"
 import WatchForChanges from "../components/watch-for-changes"
 import DomElement from "../components/dom-element"
 import LifecycleComponent from "../components/lifecycle-component"
+import ComponentApp from "../components/component-app"
 
 Vue.use(VueRouter)
 
@@ -92,6 +93,11 @@ const routes = [
     path: "/lifecycle-component",
     name: "lifecycle-component",
     component: LifecycleComponent
+  },
+  {
+    path: "/component-app",
+    name: "component-app",
+    component: ComponentApp
   }
 ]
 

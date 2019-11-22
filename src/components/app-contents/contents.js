@@ -54,5 +54,9 @@ export default [
   {
     name: "Жизненный цикл компонентов",
     path: "lifecycle-component"
+  },
+  {
+    name: "Работа с компонентами",
+    path: "component-app"
   }
 ]
