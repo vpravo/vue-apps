@@ -16,6 +16,7 @@ import WatchForChanges from "../components/watch-for-changes"
 import DomElement from "../components/dom-element"
 import LifecycleComponent from "../components/lifecycle-component"
 import ComponentApp from "../components/component-app"
+import DirectiveApp from "../components/directives"
 
 Vue.use(VueRouter)
 
@@ -98,6 +99,11 @@ const routes = [
     path: "/component-app",
     name: "component-app",
     component: ComponentApp
+  },
+  {
+    path: "/directives",
+    name: "directives",
+    component: DirectiveApp
   }
 ]
 

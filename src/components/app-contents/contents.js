@@ -58,5 +58,9 @@ export default [
   {
     name: "Работа с компонентами",
     path: "component-app"
+  },
+  {
+    name: "Директивы",
+    path: "directives"
   }
 ]
