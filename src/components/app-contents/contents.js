@@ -50,5 +50,9 @@ export default [
   {
     name: "Доступ к Dom элементам",
     path: "dom-element"
+  },
+  {
+    name: "Жизненный цикл компонентов",
+    path: "lifecycle-component"
   }
 ]
