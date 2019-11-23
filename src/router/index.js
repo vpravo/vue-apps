@@ -17,6 +17,7 @@ import DomElement from "../components/dom-element"
 import LifecycleComponent from "../components/lifecycle-component"
 import ComponentApp from "../components/component-app"
 import DirectiveApp from "../components/directives"
+import FilterMixin from "../components/filter-mixin"
 
 Vue.use(VueRouter)
 
@@ -104,6 +105,11 @@ const routes = [
     path: "/directives",
     name: "directives",
     component: DirectiveApp
+  },
+  {
+    path: "/filter-mixin",
+    name: "filter-mixin",
+    component: FilterMixin
   }
 ]
 

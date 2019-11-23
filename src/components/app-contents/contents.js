@@ -62,5 +62,9 @@ export default [
   {
     name: "Директивы",
     path: "directives"
+  },
+  {
+    name: "Фильтры и миксины",
+    path: "filter-mixin"
   }
 ]
