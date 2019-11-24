@@ -66,5 +66,9 @@ export default [
   {
     name: "Фильтры и миксины",
     path: "filter-mixin"
+  },
+  {
+    name: "Работа с формами",
+    path: "forms-app"
   }
 ]
