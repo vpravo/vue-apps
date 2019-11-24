@@ -4,6 +4,8 @@ import router from "./router"
 import store from "./store"
 import colorDirectives from "./components/directives/color"
 import ListApp from "./components/filter-mixin/list-app"
+import Vuelidate from "vuelidate"
+Vue.use(Vuelidate)
 Vue.component("app-list", ListApp)
 Vue.directive("colored", colorDirectives)
 Vue.filter("uppercase", val => {

@@ -50,11 +50,13 @@
       <h3 v-if="switched">Component is enabled</h3>
       <h3 v-else>Component is disabled</h3>
     </div>
+    <app-validate-form></app-validate-form>
   </div>
 </template>
 
 <script>
 import OnOff from "./OnOff"
+import ValidateForm from "./validata-form"
 export default {
   data() {
     return {
@@ -70,7 +72,8 @@ export default {
     }
   },
   components: {
-    appOnOff: OnOff
+    appOnOff: OnOff,
+    appValidateForm: ValidateForm
   },
   watch: {
     age(val) {

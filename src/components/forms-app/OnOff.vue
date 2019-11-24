@@ -6,6 +6,7 @@
     <button class="off" :class="{ active: !value }" @click="onChange(false)">
       Off
     </button>
+    <hr />
   </div>
 </template>
 
