@@ -21,9 +21,16 @@ import FilterMixin from "../components/filter-mixin"
 import FormsApp from "../components/forms-app"
 import RoutingApp from "../components/routing-app"
 import Home from "../components/routing-app/pages/home"
-import Cars from "../components/routing-app/pages/cars"
+//import Cars from "../components/routing-app/pages/cars"
 import Car from "../components/routing-app/pages/car"
 import CarFull from "../components/routing-app/pages/car-full"
+import ErrorCust from "../components/routing-app/pages/error"
+
+const Cars = resolve => {
+  require.ensure(["../components/routing-app/pages/cars"], () => {
+    resolve(require("../components/routing-app/pages/cars"))
+  })
+}
 
 Vue.use(VueRouter)
 
@@ -145,9 +152,29 @@ const routes = [
           {
             path: "full",
             component: CarFull,
-            name: "carFull"
+            name: "carFull",
+            // eslint-disable-next-line no-unused-vars
+            beforeEnter(to, from, next) {
+              console.log("beforeEnter")
+              //Здесь можно разместить логику проверки залогирован пользователь или нет
+              // eslint-disable-next-line no-constant-condition
+              //if (true) {
+              //next()
+              //} else {
+              //next(false)
+              //}
+              next()
+            }
           }
         ]
+      },
+      {
+        path: "none",
+        redirect: { name: "routing-app" }
+      },
+      {
+        path: "*",
+        component: ErrorCust
       }
     ]
   }
@@ -155,11 +182,12 @@ const routes = [
 
 const router = new VueRouter({
   mode: "history",
-  scrollBehavior(to, /*from8,*/ savedPosition) {
+  scrollBehavior(to, _from, savedPosition) {
     if (savedPosition) {
       return savedPosition
     }
     if (to.hash) {
+      console.log(to.hash)
       return { selector: to.hash }
     }
     return {

@@ -14,6 +14,10 @@ export default {
     year() {
       return this.$route.query.year
     }
+  },
+  beforeRouteEnter(to, from, next) {
+    console.log("beforeRouterEnter")
+    next()
   }
 }
 </script>
