@@ -19,6 +19,11 @@ import ComponentApp from "../components/component-app"
 import DirectiveApp from "../components/directives"
 import FilterMixin from "../components/filter-mixin"
 import FormsApp from "../components/forms-app"
+import RoutingApp from "../components/routing-app"
+import Home from "../components/routing-app/pages/home"
+import Cars from "../components/routing-app/pages/cars"
+import Car from "../components/routing-app/pages/car"
+import CarFull from "../components/routing-app/pages/car-full"
 
 Vue.use(VueRouter)
 
@@ -116,11 +121,52 @@ const routes = [
     path: "/forms-app",
     name: "forms-app",
     component: FormsApp
+  },
+  {
+    path: "/routing-app",
+    name: "routing-app",
+    component: RoutingApp,
+    redirect: { name: "home" },
+    children: [
+      {
+        path: "home",
+        name: "home",
+        component: Home
+      },
+      {
+        path: "cars",
+        name: "cars",
+        component: Cars
+      },
+      {
+        path: "car/:id",
+        component: Car,
+        children: [
+          {
+            path: "full",
+            component: CarFull,
+            name: "carFull"
+          }
+        ]
+      }
+    ]
   }
 ]
 
 const router = new VueRouter({
   mode: "history",
+  scrollBehavior(to, /*from8,*/ savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    }
+    if (to.hash) {
+      return { selector: to.hash }
+    }
+    return {
+      x: 0,
+      y: 500
+    }
+  },
   base: process.env.BASE_URL,
   routes
 })

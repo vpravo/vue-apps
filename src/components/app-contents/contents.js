@@ -70,5 +70,9 @@ export default [
   {
     name: "Работа с формами",
     path: "forms-app"
+  },
+  {
+    name: "Роутинг",
+    path: "routing-app"
   }
 ]
