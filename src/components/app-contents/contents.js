@@ -78,5 +78,9 @@ export default [
   {
     name: "Работа с сервером",
     path: "working-server"
+  },
+  {
+    name: "Работа с данные. Vuex",
+    path: "vuex-app"
   }
 ]

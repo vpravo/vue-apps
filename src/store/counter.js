@@ -1,12 +1,7 @@
-import Vue from "vue"
-import Vuex from "vuex"
-import secondCounter from "./counter"
-
-Vue.use(Vuex)
-
-export default new Vuex.Store({
+export default {
+  namespaced: true,
   state: {
-    counter: 0
+    counter: 20
   },
   getters: {
     computedCounter(state) {
@@ -27,8 +22,5 @@ export default new Vuex.Store({
         commit("changeCounter", payload.counterVal)
       }, payload.timeoutDelay)
     }
-  },
-  modules: {
-    secondCounter
   }
-})
+}
