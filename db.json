@@ -1,0 +1,44 @@
+{
+  "cars": [
+    {
+      "name": "Ford",
+      "year": 2014,
+      "id": 1
+    },
+    {
+      "name": "Mazda",
+      "year": 2019,
+      "id": 2
+    },
+    {
+      "name": "Lada",
+      "year": 2013,
+      "id": 3
+    },
+    {
+      "name": "BMW",
+      "year": 2017,
+      "id": 4
+    },
+    {
+      "name": "Genesis",
+      "year": 2019,
+      "id": 5
+    },
+    {
+      "name": "Zhiguli",
+      "year": 1987,
+      "id": 6
+    },
+    {
+      "name": "йуц",
+      "year": 2018,
+      "id": 7
+    },
+    {
+      "name": "",
+      "year": 2018,
+      "id": 8
+    }
+  ]
+}

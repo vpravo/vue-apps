@@ -25,6 +25,7 @@ import Home from "../components/routing-app/pages/home"
 import Car from "../components/routing-app/pages/car"
 import CarFull from "../components/routing-app/pages/car-full"
 import ErrorCust from "../components/routing-app/pages/error"
+import WorkingServer from "../components/working-server"
 
 const Cars = resolve => {
   require.ensure(["../components/routing-app/pages/cars"], () => {
@@ -177,6 +178,11 @@ const routes = [
         component: ErrorCust
       }
     ]
+  },
+  {
+    path: "/working-server",
+    name: "working-server",
+    component: WorkingServer
   }
 ]
 

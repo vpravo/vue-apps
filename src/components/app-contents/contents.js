@@ -74,5 +74,9 @@ export default [
   {
     name: "Роутинг",
     path: "routing-app"
+  },
+  {
+    name: "Работа с сервером",
+    path: "working-server"
   }
 ]
