@@ -82,5 +82,9 @@ export default [
   {
     name: "Работа с данные. Vuex",
     path: "vuex-app"
+  },
+  {
+    name: "Анимация",
+    path: "animation"
   }
 ]

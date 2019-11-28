@@ -27,6 +27,7 @@ import CarFull from "../components/routing-app/pages/car-full"
 import ErrorCust from "../components/routing-app/pages/error"
 import WorkingServer from "../components/working-server"
 import VuexApp from "../components/vuex-app"
+import Animation from "../components/animation"
 
 const Cars = resolve => {
   require.ensure(["../components/routing-app/pages/cars"], () => {
@@ -189,6 +190,11 @@ const routes = [
     path: "/vuex-app",
     name: "vuex-app",
     component: VuexApp
+  },
+  {
+    path: "/animation",
+    name: "animation",
+    component: Animation
   }
 ]
 
